@@ -1,0 +1,22 @@
+
+* {
+    box-sizing: border-box;
+}
+.app{
+    margin: 0;
+    background-image: linear-gradient(to right, #E21D27 , #B91D24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    .form{
+        margin-left: 300px;
+     }
+ 
+}}
+
+
