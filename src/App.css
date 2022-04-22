@@ -37,9 +37,10 @@
   }
 }
 .logo{
-  width: 3.5%;
+
+  width:40px;
   position: absolute;
   display: flex;
-  margin-left: -490px;
-  justify-content: flex-start;
+  margin-left: -480px;
+  
 }

@@ -4,9 +4,6 @@ import Form from './Components/Form';
 import filmas from './Components/movie.svg';
 import ApiKey from './Components/ApiKey';
 
-// import ApiKey from './Components/ApiKey';
-
-
 
 
 import './crud.scss';
@@ -16,9 +13,9 @@ function App() {
         <div className="top">
         
       <img className='logo' src={filmas} alt=''/>
-
+        <ApiKey></ApiKey>
         <Form></Form>
-       <ApiKey></ApiKey>
+      
        <h1></h1>
          </div>
 

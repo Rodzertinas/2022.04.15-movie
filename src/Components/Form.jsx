@@ -1,18 +1,46 @@
 
+import axios from "axios";
+import { useState, useEffect } from "react";
+import MovieList from "./MovieList";
+
 function Form() {
 
+  const [api, setApi] = useState([]);
+  const [inputText, setInputText] = useState('car');
 
-    return (
+  useEffect(() => {
+    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=1b359e5e7144c9fea70db6d5bb29245d&language=en-US&query=${inputText}`)
+      .then(res => setApi(res.data.results));
+    // console.log(data)
+
+
+  }, [inputText]);
+
+  const handleInputChange = (event) => {
+    setInputText(event.target.value)
+  }
+
+
+  return (
     <>
-            <input style={{ 
-              width: '1000px', 
-              height:'50px', 
-              backgroundImage: `linear-gradient(rgba(217, 72, 78), rgba(217, 72, 78))`,  }} 
-              type="text" />
-    </> 
+      <input style={{
+
+        width: '1000px',
+        height: '50px',
+        background: 'red'
+      }}
+
+        onChange={(event) => handleInputChange(event)}
+        type="text" />
+
       
-        
-    )
+     
+        <MovieList filmai={api}/>
+      
+    </>
+
+
+  )
 }
 
 export default Form;
