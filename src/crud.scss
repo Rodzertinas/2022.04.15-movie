@@ -1,22 +1,35 @@
-
 * {
     box-sizing: border-box;
 }
-.app{
+
+.app {
     margin: 0;
-    background-image: linear-gradient(to right, #E21D27 , #B91D24);
+    position: relative;
+    background-image: linear-gradient(to right, #E21D27, #B91D24);
     display: flex;
     justify-content: center;
     align-items: center;
-.top{
-    // display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 130px;
-    width: 90%;
-    border: none;
-   
- 
-}}
 
+    .top {
+        margin-top: 50px;
+        //  display: flex;
+        margin-left: 150px;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 90%;
+        border: none;
+    }
 
+}
+.movie_list {
+    padding: 20px;
+
+.movie_title {
+      
+    }
+}
+.pic{
+    width: 300px;
+    height: 450px;
+}
