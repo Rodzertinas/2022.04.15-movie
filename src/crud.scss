@@ -1,35 +1,118 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
 .app {
-    margin: 0;
     position: relative;
     background-image: linear-gradient(to right, #E21D27, #B91D24);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+
+
+
 
     .top {
-        margin-top: 50px;
-        //  display: flex;
         margin-left: 150px;
         justify-content: center;
         align-items: center;
-        height: 100px;
-        width: 90%;
+        height: 120px;
+        width: 100%;
         border: none;
+
+        .logo {
+            width: 40px;
+            padding-top: 40px;
+            padding-left: 10px;
+            position: absolute;
+            display: flex;
+            color: antiquewhite;
+
+
+        }
     }
 
+    .input_search {
+        border: 1px solid rgb(217, 72, 78);
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 100;
+        padding-left: 70px;
+        width: 80%;
+        height: 50px;
+        color: rgb(252, 246, 246);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: rgb(217, 72, 78);
+    }
+
+
+
+
 }
+
+.all_list {
+    margin-top: 42px;
+    // border: 1px solid rgb(34, 26, 148);
+
+    box-sizing: 0;
+}
+
 .movie_list {
-    padding: 20px;
+
+    width: 1000px;
+
+}
 
 .movie_title {
-      
-    }
+    padding-left: 250px;
+    font-size: 21px;
+    font-weight: 500;
+   
+    // padding-top: 40px;
+
+
 }
-.pic{
-    width: 300px;
-    height: 450px;
+.movie_popularity{
+    padding-top: 10px;
+    padding-left: 250px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.movie_overview {
+    padding: 10px;
+    margin-right: 150px;
+    padding-left: 250px;
+    position: absolute;
+    padding-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #292728;
+    font-weight: 300;
+    font-size: 18px;
+
+
+}
+
+.movie_language {
+    padding-top: 10px;
+    font-style: oblique;
+    padding-left: 250px;
+
+}
+
+.pic {
+    width: 20%;
+    margin-top: -90px;
+
+
+}
+.star{
+    width: 20px;
+}
+.img{
+    padding-top: 10px;
+    padding-left: 250px;
+    font-size: 15px;
+    font-weight: 500;
 }

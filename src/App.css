@@ -36,11 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.logo{
-
-  width:40px;
-  position: absolute;
-  display: flex;
-  margin-left: -480px;
-  
-}

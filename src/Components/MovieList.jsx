@@ -9,16 +9,12 @@ function MovieList({ filmai }) {
         <div className='movie_list'>
                     {
                         filmai.map(filmas => 
-                        <div>
+                        <div className="all_list">
                             <h2 className='movie_title'>{filmas.title}</h2>
                             <p className='movie_language'>{`Original language: `}{filmas.original_language}</p>
-
+                            <p className="movie_popularity">{filmas.popularity} </p>
                             <p className='movie_overview'>{filmas.overview}</p>
-                          
-                            {/* <img src={filmas.backdrop} alt="" /> */}
                             <img className='pic' src={`https://image.tmdb.org/t/p/original/${filmas.poster_path}`} alt="pic" />
-
-                        
                         </div>
                         
                         )
