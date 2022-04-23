@@ -75,7 +75,7 @@
 }
 .movie_popularity{
     padding-top: 10px;
-    padding-left: 250px;
+    padding-left: 295px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -90,6 +90,7 @@
     color: #292728;
     font-weight: 300;
     font-size: 18px;
+    line-height: 27px;
 
 
 }
@@ -98,7 +99,14 @@
     padding-top: 10px;
     font-style: oblique;
     padding-left: 250px;
+    // text-transform: uppercase;
 
+}
+.movie_vote{
+    font-size: 10px;
+    margin-left: 45px;
+    color: rgb(32, 29, 29);
+    padding-left: 250px;
 }
 
 .pic {
@@ -107,12 +115,22 @@
 
 
 }
-.star{
-    width: 20px;
+.popularity_star{
+    width: 30px;
+    position: absolute;
+    
+    margin-top: 2px;
+    margin-left: -45px;
+
+  
+   
 }
 .img{
     padding-top: 10px;
     padding-left: 250px;
     font-size: 15px;
     font-weight: 500;
+}
+.balas{
+    font-size: 50px;
 }
