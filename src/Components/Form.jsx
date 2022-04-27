@@ -27,9 +27,6 @@ function Form() {
   return (
     <>
       <input className="input_search" onChange={(event) => handleInputChange(event)} type="text" />
-
-
-
       <MovieList filmai={api} />
 
     </>

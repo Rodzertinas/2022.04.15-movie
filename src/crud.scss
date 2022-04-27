@@ -1,136 +1,131 @@
 * {
+    // font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
+// ...............................................................................
 
 .app {
-    position: relative;
-    background-image: linear-gradient(to right, #E21D27, #B91D24);
-   
+ width: 100%;
 
-
-
-
-    .top {
-        margin-left: 150px;
-        justify-content: center;
-        align-items: center;
-        height: 120px;
+    .top{
+        background-image: linear-gradient(to right, #E21D27, #B91D24);
         width: 100%;
-        border: none;
-
-        .logo {
-            width: 40px;
-            padding-top: 40px;
-            padding-left: 10px;
+        height: 120px;
+        background-color: red;
+        .input_search{
+            margin-left: 4%;
+            border: 1px solid rgb(217, 72, 78);
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 100;
+            padding-left: 90px;
+            width: 90%;
+            height: 50px;
+            color: rgb(252, 246, 246);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: rgb(217, 72, 78);
+          }
+          .logo {
+            width: 35px;
+            padding-top: 37px;
+            margin-left: 60px;
             position: absolute;
-            display: flex;
             color: antiquewhite;
-
-
         }
+
     }
-
-    .input_search {
-        border: 1px solid rgb(217, 72, 78);
-        margin-top: 30px;
-        font-size: 18px;
-        font-weight: 100;
-        padding-left: 70px;
-        width: 80%;
-        height: 50px;
-        color: rgb(252, 246, 246);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background: rgb(217, 72, 78);
-    }
-
-
-
-
-}
-
-.all_list {
-    margin-top: 42px;
-    // border: 1px solid rgb(34, 26, 148);
-
-    box-sizing: 0;
-}
-
-.movie_list {
-
-    width: 1000px;
-
-}
-
-.movie_title {
-    padding-left: 250px;
-    font-size: 21px;
-    font-weight: 500;
-   
-    // padding-top: 40px;
-
-
-}
-.movie_popularity{
-    padding-top: 10px;
-    padding-left: 295px;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.movie_overview {
-    padding: 10px;
-    margin-right: 150px;
-    padding-left: 250px;
-    position: absolute;
-    padding-top: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #292728;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
-
-
-}
-
-.movie_language {
-    padding-top: 10px;
-    font-style: oblique;
-    padding-left: 250px;
-    // text-transform: uppercase;
-
-}
-.movie_vote{
-    font-size: 10px;
-    margin-left: 45px;
-    color: rgb(32, 29, 29);
-    padding-left: 250px;
-}
-
-.pic {
-    width: 20%;
-    margin-top: -90px;
-
-
-}
-.popularity_star{
-    width: 30px;
-    position: absolute;
     
-    margin-top: 2px;
-    margin-left: -45px;
-
-  
    
+.movie_list{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
 }
-.img{
-    padding-top: 10px;
-    padding-left: 250px;
-    font-size: 15px;
-    font-weight: 500;
+.all_list{
+    gap: 50px;
+    display: flex;
+    // flex-direction: row;
 }
-.balas{
-    font-size: 50px;
+.left_side_list{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+        .pic{
+             width: 200px;
+         
+         }
 }
+.right_side_list{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    .movie_title{
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .movie_language{
+        font-style: oblique;
+    }
+    .popularity_star {
+        width: 25px;
+      
+        }
+    .movie_popularity{
+        padding-top: 84px;
+        position: absolute;
+        padding-left: 36px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .ten{
+        padding-top: 87px;
+        position: absolute;
+        padding-left: 58px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .movie_vote{
+        padding-top: 101px;
+        position: absolute;
+        padding-left: 37px;
+        font-size: 11px;
+        color: gray;
+    }
+    .movie_overview{
+        line-height: 30px;
+        margin-right: 100px;
+        font-size: 100.5%;
+        color: rgb(44, 42, 42);
+       
+    }
+}}
+
+
+
+@media screen and (max-width: 670px) {
+  
+
+    .all_list{
+        flex-direction: column;
+    }
+    .right_side_list{
+     margin-left: 30px;
+     margin-right: 10px;  
+    }
+    .pic{
+        width: 100%;
+  height: auto;
+    }
+   .left_side_list {
+        align-items: center;
+        
+    }
+}
+
+    
+
+    
