@@ -20,6 +20,7 @@
             margin-left: 5%;
             border-radius: 2px;
             border: 1px solid rgb(217, 72, 78);
+            border-bottom-color: grey;
             margin-top: 30px;
             font-size: 1em;
             font-weight: 100;
@@ -152,6 +153,14 @@
         padding-bottom: 400px;
         
     }
+    .movie_language{
+        padding-left: 99px;
+        padding-top: 47px;
+    }
+    .popularity_star {
+      
+        margin-top: -46px;
+        }
     .movie_popularity{
         margin-top: -89px;
         position: absolute;
@@ -163,7 +172,7 @@
       
     }
     .movie_overview{
-        
+        // margin-top: -48px;
         display: flex;
         justify-content: center;
        
