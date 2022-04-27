@@ -26,7 +26,7 @@ function Form() {
 
   return (
     <>
-      <input className="input_search" onChange={(event) => handleInputChange(event)} type="text" />
+      <input className="input_search" placeholder="Enter movie name.." onChange={(event) => handleInputChange(event)} type="text" />
       <MovieList filmai={api} />
 
     </>
