@@ -14,5 +14,5 @@ Crude FILMAI!!!
 
 #### And for all saving data thanks these greatest services on  🢃
 <p align="center">
- [<img loading="lazy" alt="GitHub" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="25">](https://github.com/)
+ <img loading="lazy" alt="GitHub" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="25">
 </p>
