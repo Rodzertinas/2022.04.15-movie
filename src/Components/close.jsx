@@ -2,9 +2,9 @@
 function Close() {
 
 
-
   return (
-            <p className="close">
+    
+            <p className="close" >
                 +
             </p>
 ) 
