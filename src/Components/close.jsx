@@ -5,7 +5,7 @@ function Close() {
 
   return (
             <p className="close">
-                +
+                {/* + */}
             </p>
 ) 
    
