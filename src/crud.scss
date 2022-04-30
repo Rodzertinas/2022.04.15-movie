@@ -57,6 +57,16 @@
     gap: 40px;
     
 }
+.border_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #CD1D26;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    font-size: 4px;
+}
+
 .all_list{
     gap: 50px;
     display: flex;

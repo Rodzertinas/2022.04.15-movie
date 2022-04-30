@@ -17,8 +17,12 @@ function MovieList({ filmai }) {
         <div className='movie_list'>
             {
                 filmai.map(filmas =>
-                    <div className="all_list">
-                        <div className='left_side_list'>
+                    <div>
+                    <p className='border_bottom'>_______________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+                    <div className="all_list"  >
+                        
+                    <div className='left_side_list'>
                             <img className='pic' src={`https://image.tmdb.org/t/p/original/${filmas.poster_path}`} alt="pic" />
                             </div>
                          <div className='right_side_list'>
@@ -29,9 +33,12 @@ function MovieList({ filmai }) {
                                     <p className='ten'>  {`/10`} </p> 
                                     <p className='movie_vote'>{filmas.vote_count}{` votes `}</p>
                                     <p className='movie_overview'>{filmas.overview}</p>
+                                   
+                                
+                                   
                         </div>
                         
-                    </div> 
+                    </div> </div>
 
                 )
             }
