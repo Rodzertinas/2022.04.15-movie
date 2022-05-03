@@ -36,8 +36,18 @@ function Form() {
         <ul className='results' >
           {api.length > 0 ? 
             api.slice(0, 8).map(filmas => (
-              <li className="onclick" onClick={() => handleSelect(filmas)} key={filmas.id}>
-             {filmas.title}
+              <li className="onclick" onClick={() => handleSelect(filmas)}
+              
+                 key={filmas.id}>
+            <div>
+                 {filmas.title} <br />
+                 <div className="rating">
+                 {filmas.vote_average }{`Rating,`}
+                </div>
+            </div>
+
+                
+            
               </li>
             ))
           : ''}     

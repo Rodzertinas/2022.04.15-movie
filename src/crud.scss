@@ -221,7 +221,6 @@
     }
     .onclick:hover{
     color: rgb(0, 0, 0);
-    
     background-color:#E21D27;
     }
     .movies-list{
@@ -235,6 +234,12 @@
     position: absolute;
     width: 90%;
    }
+   .rating{
+       color: grey;
+       font-size: small;
+       font-weight: 400;
+   }
+ 
     
     
 
