@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-// ...............................................................................
+// ########################################################################
 
 .app {
  width: 100%;
@@ -62,10 +62,13 @@
     flex-direction: row;
     justify-content: center;
     color: #CD1D26;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     padding-left: 10px;
     font-size: 4px;
+
+    
 }
+
 
 .all_list{
     gap: 50px;
@@ -207,7 +210,32 @@
         margin-left: -2px;
     }
 }
-
+.onclick{
+    cursor: pointer;
+    list-style-type: none;
+    background-color: rgb(243, 237, 237);
+    color: rgb(0, 0, 0);
+    padding-left: 40px;
+    height: 50px;
+    font-weight: 500;
+    }
+    .onclick:hover{
+    color: rgb(0, 0, 0);
+    
+    background-color:#E21D27;
+    }
+    .movies-list{
+    display: flex;
+    justify-content: center;
+    }
+   .results{
+    border-top: 2px solid  rgb(209, 207, 207);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+   }
+    
     
 
     
