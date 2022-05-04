@@ -8,20 +8,27 @@ function Form() {
   const [api, setApi] = useState([]);
   const [inputText, setInputText] = useState('');
   const [selected, setSelected] = useState();
+  const [active, setActive] = useState (false)
 
   useEffect(() => {
+    if (inputText.length > 2  ) {
+  
     axios.get(`https://api.themoviedb.org/3/search/movie?api_key=1b359e5e7144c9fea70db6d5bb29245d&language=en-US&query=${inputText}`)
       .then(res => {
         console.log(res);
         return setApi(res.data.results)
-      });
 
+      });
+}
   }, [inputText]);
 
   const handleInputChange = (event) => {
+    setActive(true)
     setInputText(event.target.value)
   }
-  const handleSelect = (filmas) => {setSelected(filmas)}
+  const handleSelect = (filmas) => {
+    setActive(false)
+    setSelected(filmas)}
 
   return (
     <>
@@ -34,7 +41,7 @@ function Form() {
 
       <div className='movies-list'>
         <ul className='results' >
-          {api.length > 0 ? 
+          {api.length > 0 && active? 
             api.slice(0, 8).map(filmas => (
               <li className="onclick" onClick={() => handleSelect(filmas)}
               
