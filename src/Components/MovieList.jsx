@@ -16,7 +16,7 @@ function MovieList({ filmas }) {
                         <div className="all_list"  >
 
                             <div className='left_side_list'>
-                                <img className='pic' src={`https://image.tmdb.org/t/p/original/${filmas.poster_path}`} alt="pic" />
+                                <img className='pic' src={filmas.poster_path ? `https://image.tmdb.org/t/p/original/${filmas.poster_path} `: 'no ok' } alt="pic" />
                             </div>
                             <div className='right_side_list'>
                                 <h2 className='movie_title'> {filmas.title}</h2>

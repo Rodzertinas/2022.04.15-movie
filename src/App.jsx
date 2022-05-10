@@ -8,8 +8,6 @@ import { useState } from 'react';
 
 // ########################################################################
 
-
-
 // const [results, setResults] = useState([]);
 // const [search, setSearch] = useState('');
 // const [selected, setSelected] = useState('');
@@ -20,12 +18,12 @@ import { getData } from './Common/getData';
 function App() {
   return (
     <div className="app">
-        <div className="top">
-        <Close></Close>
-      <img className='logo'  
-src={filmas} alt=''/>
+      <div className="top">
+        {/* <Close   ></Close> */}
+            <img className='logo'  
+            src={filmas} alt=''/>
         <Form></Form>
-         </div>
+      </div>
 
     </div>
   );

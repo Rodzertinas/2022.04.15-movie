@@ -1,14 +1,14 @@
 
-function Close() {
+// function Close() {
+// // ########################################################################
 
-// ########################################################################
-  return (
+//   return (
     
-            <p className="close" >
-                +
-            </p>
-) 
+//             <p onClick={} className="close" >
+//                 +
+//             </p>
+// ) 
    
-}
+// }
 
-export default Close;
+// export default Close;
