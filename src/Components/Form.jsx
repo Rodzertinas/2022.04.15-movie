@@ -43,6 +43,7 @@ function Form() {
       placeholder="Enter movie name.." 
       onChange={(event) => handleInputChange(event)} 
        />
+ {/* <span onClick =  {close}>+</span> */}
       <div className='movies-list'>
         <ul className='results' >
           {api.length > 0 && active? 

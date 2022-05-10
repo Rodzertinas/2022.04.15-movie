@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import Form from './Components/Form';
 import filmas from './Components/movie.svg';
-import Close from './Components/Close';
 import { useState } from 'react';
 
 // ########################################################################
